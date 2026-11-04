@@ -1033,10 +1033,16 @@ body:has(.about-section) > main {
   background-color: var(--pink-hover);
   transform: translateY(-3px);
 }
-@media (max-width: 700px) {
+
+ @media (max-width: 700px) {
   .cart-page {
     padding: 20px 12px;
     margin: 20px auto;
+  }
+
+  .cart-items {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .cart-item {
@@ -1170,4 +1176,10 @@ body {
 
 main {
   flex: 1;
+}
+@media (max-width: 700px) {
+  .cart-items {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
