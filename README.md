@@ -3,6 +3,7 @@
 
 # Creamy Bliss 🍦
 
+
 A responsive ice cream shopping website built with Next.js and React.
 
 **Live Website:** https://creamy-bliss-plum.vercel.app
@@ -16,7 +17,16 @@ Visitors can explore a variety of ice cream flavors, browse products by category
 
 The website features a playful pastel design, responsive layouts, and a simple navigation experience across desktop, tablet, and mobile devices.
 
+## Screenshots
 
+### Homepage
+![Creamy Bliss Homepage](./public/screenshots/home.png)
+
+### All Flavors
+![All Flavors](./public/screenshots/flavors.png)
+
+### Shopping Cart
+![Shopping Cart](./public/screenshots/cart.png)
 ## Features
 
 - Responsive design for desktop, tablet, and mobile.
