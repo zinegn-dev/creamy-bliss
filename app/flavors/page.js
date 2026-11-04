@@ -13,42 +13,42 @@ export default function FlavorsPage() {
       category: "Fruit",
       description: "Sweet strawberry ice cream for a happy day.",
       price: 350,
-      image: "/flavors/strawberry.png",
+      image: "/flavors/strawberry.webp",
     },
     {
       name: "Chocolate Heaven",
       category: "Chocolate",
       description: "Rich and creamy chocolate ice cream.",
       price: 400,
-      image: "/flavors/chocolate.png",
+      image: "/flavors/chocolate.webp",
     },
     {
       name: "Vanilla Cloud",
       category: "Classic",
       description: "Smooth and creamy classic vanilla ice cream.",
       price: 300,
-      image: "/flavors/vanilla.png",
+      image: "/flavors/vanilla.webp",
     },
     {
       name: "Minty Fresh",
       category: "Classic",
       description: "Cool mint ice cream with chocolate chips.",
       price: 380,
-      image: "/flavors/mint.png",
+      image: "/flavors/mint.webp",
     },
     {
       name: "Mango Sunshine",
       category: "Fruit",
       description: "Sweet, fruity mango ice cream.",
       price: 350,
-      image: "/flavors/mango.png",
+      image: "/flavors/mango.webp",
     },
     {
       name: "Cookie Crunch",
       category: "Chocolate",
       description: "Creamy ice cream with crunchy cookie pieces.",
       price: 420,
-      image: "/flavors/cookie.png",
+      image: "/flavors/cookie.webp",
     },
   ];
 
@@ -106,11 +106,12 @@ export default function FlavorsPage() {
         <div className="flavor-grid">
           {filteredFlavors.map((flavor) => (
             <div className="flavor-card" key={flavor.name}>
-              <img
-                className="flavor-photo"
-                src={flavor.image}
-                alt={flavor.name}
-              />
+                          <img
+              className="flavor-photo"
+              src={flavor.image}
+              alt={flavor.name}
+              loading="eager"
+            />
               <h3>{flavor.name}</h3>
               <p>{flavor.description}</p>
               <p className="flavor-price">Rs. {flavor.price}</p>
